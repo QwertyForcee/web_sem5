@@ -1,0 +1,79 @@
+﻿html,body{
+  height: 100%;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --bg-color: rgb(125, 202, 176);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex: 1;
+}
+
+header,footer{
+  background-color:var(--bg-color);
+}
+
+footer{
+  flex-shrink: 0;
+}
+
+.nav-color{
+  color: black;
+}
+
+.container{
+  width: 100%;
+  margin: 0 13% 0 13%;
+}
+
+.mynav{
+  font-size: 30px;
+  background: var(--bg-color);
+  color: black;
+  height: 100%;
+  position: relative;
+}
+
+.navbar-mybrand{
+  font-size: 40px;
+}
+
+.mydropdown button{
+  padding: 0;
+  background:var(--bg-color);
+  font-size: 25px;
+  border: 0;
+}
+
+.footer-nav{
+  height: 100%;
+}
+
+.footer-nav a{
+  color: white;
+}
+
+.ml-10{
+  margin-left: 15%;
+}
+
+.btn-submit{
+  background: var(--bg-color);
+  margin: 2rem;
+}
+
+.mycart{
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.mycart a{
+  color: black;
+}

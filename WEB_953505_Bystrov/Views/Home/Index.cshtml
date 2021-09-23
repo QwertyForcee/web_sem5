@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Главная страница";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="display-4">@ViewData["Text"]</h1>
+<h2>Список</h2>
+<ol type="A">
+    @for(int i = 0; i < 3; i++)
+    {
+        <li>элемент номер @i</li>
+    }
+</ol>
+
+
+<hr>
+
+<h2>Форма</h2>
+
+<form method="POST">
+    <div class="ml-10">
+        <select asp-items="@ViewData["DemoList"] as SelectList">
+        </select>
+
+    </div>
+    <div class="ml-10">
+        <label for="check1">Checkbox 1</label>
+        <input type="checkbox" name="check1" id="">
+        <br>
+        <label for="check2">Checkbox 2</label>
+        <input type="checkbox" name="check2" id="">
+        <div class="mt-4">
+            <label for="radio1">Radio 1</label>
+            <input type="radio" name="radio1" id="">
+        </div>
+    </div>
+    <div class="mt-4">
+        <label for="login">Login</label>
+        <input name="login" type="text">
+    </div>
+    <div class="mt-4">
+        <label for="password">Password</label>
+        <input name="password" type="text">
+    </div>
+    <button class="btn btn-submit" type="submit">Submit</button>
+
+</form>
